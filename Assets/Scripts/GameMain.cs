@@ -15,7 +15,7 @@ public class GameMain : MonoBehaviour
 
     private void SellAllWool()
     {
-        var wools = FindObjectsOfType<Wool>(); //‰æ–Êã‚Ì‘S‚Ä‚ÌWoolƒXƒNƒŠƒvƒg‚ª•t‚¢‚½ƒIƒuƒWƒFƒNƒg‚ğŒŸõ‚µ‚ÄWool”z—ñwools‚ÉŠi”[
+        var wools = FindObjectsOfType<Wool>(); //ç”»é¢ä¸Šã®å…¨ã¦ã®Woolã‚¹ã‚¯ãƒªãƒ—ãƒˆãŒä»˜ã„ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ¤œç´¢ã—ã¦Woolé…åˆ—woolsã«æ ¼ç´
 foreach (var wool in wools)
         {
             wool.Sell(wallet);
@@ -30,6 +30,6 @@ foreach (var wool in wools)
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
 }
