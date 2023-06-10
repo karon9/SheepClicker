@@ -5,21 +5,12 @@ using UnityEngine;
 public class SheepGenerator : MonoBehaviour
 {
     [SerializeField]
-    private Sheep sheepPrefab; //¶¬‚·‚é—r‚ÌPrefab
+    private Sheep sheepPrefab; //ç”Ÿæˆã™ã‚‹ç¾Šã®Prefab
 
-    //—rì¬
-    public void CreateSheep()
+    //ç¾Šä½œæˆ
+    public void CreateSheep(SheepData sheepData)
     {
         var sheep = Instantiate(sheepPrefab);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.S))
-        {
-            CreateSheep();
-        }
-        
+        sheep.sheepData = sheepData;
     }
 }
