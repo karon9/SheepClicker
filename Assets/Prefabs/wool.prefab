@@ -100,6 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: 5117854874796845726}
+  woolSpriteRenderer: {fileID: 1225874016514163224}
+  woolColor: {r: 1, g: 1, b: 1, a: 0}
+  price: 10
 --- !u!50 &5117854874796845726
 Rigidbody2D:
   serializedVersion: 4
