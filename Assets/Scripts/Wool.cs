@@ -9,6 +9,8 @@ public class Wool : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
 
     [SerializeField] private SpriteRenderer woolSpriteRenderer;
+
+    [SerializeField] private Coin coinPrefab;
     
     //órñ—ÇÃêF
     public Color woolColor;
@@ -19,8 +21,12 @@ public class Wool : MonoBehaviour
     //órñ—ÇÃîÑãpèàóù
     public void Sell(Wallet wallet)
     {
-        wallet.money += price;
+        var coin = Instantiate(coinPrefab, transform.position,
+            transform.rotation);
+        coin.value = price;
+        coin.wallet = wallet;
         Destroy(gameObject);
+
     }
 
     // Start is called before the first frame update
