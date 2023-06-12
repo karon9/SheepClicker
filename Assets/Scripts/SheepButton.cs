@@ -35,6 +35,7 @@ public class SheepButton : MonoBehaviour
         var price = sheepData.basePrice + sheepData.extendPrice * currentCnt;//現在の頭数から、次の購入金額を計算
         wallet.money -= price;//購入した分から所持金をマイナス
         currentCnt++;
+        SoundManager.Instance.Play("羊の鳴き声");
     }
     
     // Start is called before the first frame update

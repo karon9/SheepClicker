@@ -66,11 +66,13 @@ public class Sheep : MonoBehaviour
         {
             sheepRenderer.sprite = cutSheepSprite; //画像をカットされたものに差し替え
             sheepRenderer.color = Color.white; //毛はもうないので色を白に戻す
+            SoundManager.Instance.Play("羊の鳴き声");
         }
 
         var wool = Instantiate(woolPrefab,transform.position, transform.rotation);//TODO Woolオブジェクトに今回刈り取った羊毛と色情報を渡す
         wool.price = shavingWool;
         wool.woolColor = sheepData.color;
+        SoundManager.Instance.Play("刈り取り");
     }
 
 

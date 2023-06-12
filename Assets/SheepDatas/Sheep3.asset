@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f399261125714489e49d8827970e0b, type: 3}
   m_Name: Sheep3
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.7490196, b: 0.7490196, a: 1}
-  basePrice: 100
-  extendPrice: 50
+  color: {r: 0.98039216, g: 0.8666667, b: 0.63529414, a: 1}
+  basePrice: 1100
+  extendPrice: 500
   maxCount: 10
-  woolCnt: 40
+  woolCnt: 400

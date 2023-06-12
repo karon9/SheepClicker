@@ -22,11 +22,12 @@ public class Coin : MonoBehaviour
         if (waitTime > 0) return; //まだ待ち時間なので動かない
         var v = wallet.transform.position - transform.position;//現在の位置から、Walletオブジェクトまで進むベクトル
         transform.position += v * Time.deltaTime * 20;
-//近づいたら到着したとみなす
+        //近づいたら到着したとみなす
         if (v.magnitude < 0.5f)
         {
             wallet.money += value;
             Destroy(gameObject);
+            SoundManager.Instance.Play("コイン");
         }
     }
 }
